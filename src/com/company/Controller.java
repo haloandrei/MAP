@@ -3,6 +3,7 @@ package com.company;
 import com.company.model.AbstractDataTypes.MyException;
 import com.company.model.AbstractDataTypes.MyIStack;
 import com.company.model.PrgState;
+import com.company.model.Repository.IRepository;
 import com.company.model.Repository.Repository;
 import com.company.model.Statements.IStmt;
 
@@ -11,9 +12,11 @@ import java.io.IOException;
 public class Controller {
     private Repository repo;
 
-    public Controller(Repository newRepo){
-        repo = newRepo;
+    public Controller(IRepository newRepo){
+        repo = (Repository) newRepo;
     }
+
+
 
     public PrgState oneStep() throws MyException {
         PrgState state = repo.getCrtPrgState();
@@ -22,14 +25,14 @@ public class Controller {
         IStmt crtStmt = stk.pop();
         return crtStmt.execute(state);
     }
-    void allStep(boolean debug) throws IOException {
+    public void allStep(boolean debug) throws IOException {
         PrgState prg = repo.getCrtPrgState(); // repo is the controller field of type MyRepoInterface
-        if (debug == true)
+        if (debug)
             System.out.println(prg.toString());//here you can display the prg state
             repo.logPrgStateExec();
         while (!prg.getStk().isEmpty()) {
             oneStep();
-            if (debug == true)
+            if (debug)
                 repo.logPrgStateExec();
                 System.out.println(prg.toString());
         }
@@ -40,5 +43,9 @@ public class Controller {
 
         return repo;
 
+    }
+
+    public void addProgram(PrgState state){
+        repo.pushPrgStmt(state);
     }
 }

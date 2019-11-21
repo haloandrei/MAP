@@ -8,6 +8,7 @@ import com.company.model.Values.StringValue;
 import com.company.model.Values.Value;
 
 import java.io.BufferedReader;
+import java.io.File;
 
 public class PrgState {
     private MyIStack<IStmt> exeStack;
@@ -23,6 +24,14 @@ public class PrgState {
         FileTable = ift;
         //originalProgram=deepCopy(prg);//recreate the entire original prg
     }
+    public PrgState(IStmt stmt){
+        exeStack = new MyStack<>();
+        symTable = new MyDictionary<>();
+        out = new MyList<>();
+        FileTable = new MyDictionary<>();
+        exeStack.push(stmt);
+    }
+
     public void addIStmt(IStmt st) {exeStack.push(st);}
 
     public MyIStack<IStmt> getStk() {

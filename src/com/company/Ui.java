@@ -9,6 +9,8 @@ import com.company.model.Types.IntType;
 import com.company.model.Values.BoolValue;
 import com.company.model.Values.IntValue;
 
+import java.io.IOException;
+
 public class Ui {
     Controller controller;
 
@@ -38,6 +40,10 @@ public class Ui {
                                         VarExp("v"))))));
 
         controller.getRepo().getCrtPrgState().addIStmt(ex3);
-        controller.allStep(true);
+        try {
+            controller.allStep(true);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

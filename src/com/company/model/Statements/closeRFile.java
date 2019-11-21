@@ -1,5 +1,6 @@
 package com.company.model.Statements;
 
+import com.company.model.AbstractDataTypes.MyDictionary;
 import com.company.model.AbstractDataTypes.MyException;
 import com.company.model.AbstractDataTypes.MyIDictionary;
 import com.company.model.AbstractDataTypes.MyIStack;
@@ -28,10 +29,11 @@ public class closeRFile implements IStmt {
         Value value=exp.eval(symTbl);
         if(value.getType().equals(new StringType())) {
                 StringValue value1 = (StringValue) value;
-                if (fileTable.isDefined(value1)) {
+                if (((MyDictionary)fileTable).isDefinedBuffer(value1)) {
                     try {
-                        BufferedReader file = (BufferedReader) fileTable.lookup(value1.getVal());
+                        BufferedReader file = (BufferedReader) ((MyDictionary)fileTable).lookupBuffer(value1);
                         file.close();
+                        ((MyDictionary)fileTable).remove(value1);
                     } catch (IOException e) {
                         e.printStackTrace();
                         throw new MyException("IOException incoming: close fail");
@@ -40,5 +42,12 @@ public class closeRFile implements IStmt {
             }
             else throw new MyException("path not string");
         return state;
+    }
+
+    @Override
+    public String toString() {
+        return "closeRFile{" +
+                "exp=" + exp.toString() +
+                '}';
     }
 }

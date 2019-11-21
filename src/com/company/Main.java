@@ -12,7 +12,7 @@ public class Main {
         MyIDictionary<String, Value> dictionary = new MyDictionary<String, Value>();
         MyList<Value> list = new MyList<Value>();
         MyIStack<IStmt> stack = new MyStack<>();
-        PrgState prg = new PrgState(stack,dictionary,list);
+        PrgState prg = new PrgState(stack,dictionary,list,new MyDictionary<>());
         MyIList<PrgState> repoList = new MyList<PrgState>();
         Repository repository = new Repository(repoList);
         repoList.add(prg);

@@ -1,5 +1,6 @@
 package com.company.model.Statements;
 
+import com.company.model.AbstractDataTypes.MyDictionary;
 import com.company.model.AbstractDataTypes.MyException;
 import com.company.model.AbstractDataTypes.MyIDictionary;
 import com.company.model.AbstractDataTypes.MyIStack;
@@ -36,9 +37,9 @@ public class readFile implements IStmt {
         if(lineInFile.getType().equals(new IntType())){
             if(value.getType().equals(new StringType())) {
                 StringValue value1 = (StringValue) value;
-                if (fileTable.isDefined(value1)) {
+                if (((MyDictionary)fileTable).isDefinedBuffer(value1)) {
                     try {
-                        BufferedReader file = (BufferedReader) fileTable.lookup(value1.getVal());
+                        BufferedReader file = (BufferedReader) ((MyDictionary)fileTable).lookupBuffer(value1);
                         String content = file.readLine();
                         int newVal = 0;
                         if (content != null) {
@@ -55,5 +56,13 @@ public class readFile implements IStmt {
         }
         else throw new MyException("file line position not int");
         return state;
+    }
+
+    @Override
+    public String toString() {
+        return "readFile{" +
+                "exp=" + exp.toString() +
+                ", lineReadVariable=" + lineReadVariable.toString() +
+                '}';
     }
 }

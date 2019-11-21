@@ -1,0 +1,181 @@
+3
+5Execution Stack: MyStack{stack=[(VarDeclStmt{value='varf', type=string};(varf=ValueExp{e=StringValue{value=test.in}};(openRFile{exp=VarExp{id='varf'}};(VarDeclStmt{value='varc', type=int};(readFile{exp=VarExp{id='varf'}, lineReadVariable=VarExp{id='varc'}};(print(VarExp{id='varc'});;(readFile{exp=VarExp{id='varf'}, lineReadVariable=VarExp{id='varc'}};(print(VarExp{id='varc'});;closeRFile{exp=VarExp{id='varf'}}))))))))]}
+Symbol table: MyDictionary{Dictionary={}}
+Out: MyList{list=[]}
+Heap table: MyDictionary{Dictionary={}}
+-------------------
+Execution Stack: MyStack{stack=[(varf=ValueExp{e=StringValue{value=test.in}};(openRFile{exp=VarExp{id='varf'}};(VarDeclStmt{value='varc', type=int};(readFile{exp=VarExp{id='varf'}, lineReadVariable=VarExp{id='varc'}};(print(VarExp{id='varc'});;(readFile{exp=VarExp{id='varf'}, lineReadVariable=VarExp{id='varc'}};(print(VarExp{id='varc'});;closeRFile{exp=VarExp{id='varf'}}))))))), VarDeclStmt{value='varf', type=string}]}
+Symbol table: MyDictionary{Dictionary={}}
+Out: MyList{list=[]}
+Heap table: MyDictionary{Dictionary={}}
+-------------------
+Execution Stack: MyStack{stack=[(varf=ValueExp{e=StringValue{value=test.in}};(openRFile{exp=VarExp{id='varf'}};(VarDeclStmt{value='varc', type=int};(readFile{exp=VarExp{id='varf'}, lineReadVariable=VarExp{id='varc'}};(print(VarExp{id='varc'});;(readFile{exp=VarExp{id='varf'}, lineReadVariable=VarExp{id='varc'}};(print(VarExp{id='varc'});;closeRFile{exp=VarExp{id='varf'}})))))))]}
+Symbol table: MyDictionary{Dictionary={varf=StringValue{value=}}}
+Out: MyList{list=[]}
+Heap table: MyDictionary{Dictionary={}}
+-------------------
+Execution Stack: MyStack{stack=[(openRFile{exp=VarExp{id='varf'}};(VarDeclStmt{value='varc', type=int};(readFile{exp=VarExp{id='varf'}, lineReadVariable=VarExp{id='varc'}};(print(VarExp{id='varc'});;(readFile{exp=VarExp{id='varf'}, lineReadVariable=VarExp{id='varc'}};(print(VarExp{id='varc'});;closeRFile{exp=VarExp{id='varf'}})))))), varf=ValueExp{e=StringValue{value=test.in}}]}
+Symbol table: MyDictionary{Dictionary={varf=StringValue{value=}}}
+Out: MyList{list=[]}
+Heap table: MyDictionary{Dictionary={}}
+-------------------
+Execution Stack: MyStack{stack=[(openRFile{exp=VarExp{id='varf'}};(VarDeclStmt{value='varc', type=int};(readFile{exp=VarExp{id='varf'}, lineReadVariable=VarExp{id='varc'}};(print(VarExp{id='varc'});;(readFile{exp=VarExp{id='varf'}, lineReadVariable=VarExp{id='varc'}};(print(VarExp{id='varc'});;closeRFile{exp=VarExp{id='varf'}}))))))]}
+Symbol table: MyDictionary{Dictionary={varf=StringValue{value=test.in}}}
+Out: MyList{list=[]}
+Heap table: MyDictionary{Dictionary={}}
+-------------------
+Execution Stack: MyStack{stack=[(VarDeclStmt{value='varc', type=int};(readFile{exp=VarExp{id='varf'}, lineReadVariable=VarExp{id='varc'}};(print(VarExp{id='varc'});;(readFile{exp=VarExp{id='varf'}, lineReadVariable=VarExp{id='varc'}};(print(VarExp{id='varc'});;closeRFile{exp=VarExp{id='varf'}}))))), openRFile{exp=VarExp{id='varf'}}]}
+Symbol table: MyDictionary{Dictionary={varf=StringValue{value=test.in}}}
+Out: MyList{list=[]}
+Heap table: MyDictionary{Dictionary={}}
+-------------------
+Execution Stack: MyStack{stack=[(VarDeclStmt{value='varc', type=int};(readFile{exp=VarExp{id='varf'}, lineReadVariable=VarExp{id='varc'}};(print(VarExp{id='varc'});;(readFile{exp=VarExp{id='varf'}, lineReadVariable=VarExp{id='varc'}};(print(VarExp{id='varc'});;closeRFile{exp=VarExp{id='varf'}})))))]}
+Symbol table: MyDictionary{Dictionary={varf=StringValue{value=test.in}}}
+Out: MyList{list=[]}
+Heap table: MyDictionary{Dictionary={StringValue{value=test.in}=java.io.BufferedReader@69663380}}
+-------------------
+Execution Stack: MyStack{stack=[(readFile{exp=VarExp{id='varf'}, lineReadVariable=VarExp{id='varc'}};(print(VarExp{id='varc'});;(readFile{exp=VarExp{id='varf'}, lineReadVariable=VarExp{id='varc'}};(print(VarExp{id='varc'});;closeRFile{exp=VarExp{id='varf'}})))), VarDeclStmt{value='varc', type=int}]}
+Symbol table: MyDictionary{Dictionary={varf=StringValue{value=test.in}}}
+Out: MyList{list=[]}
+Heap table: MyDictionary{Dictionary={StringValue{value=test.in}=java.io.BufferedReader@69663380}}
+-------------------
+Execution Stack: MyStack{stack=[(readFile{exp=VarExp{id='varf'}, lineReadVariable=VarExp{id='varc'}};(print(VarExp{id='varc'});;(readFile{exp=VarExp{id='varf'}, lineReadVariable=VarExp{id='varc'}};(print(VarExp{id='varc'});;closeRFile{exp=VarExp{id='varf'}}))))]}
+Symbol table: MyDictionary{Dictionary={varf=StringValue{value=test.in}, varc=IntValue{value=0}}}
+Out: MyList{list=[]}
+Heap table: MyDictionary{Dictionary={StringValue{value=test.in}=java.io.BufferedReader@69663380}}
+-------------------
+Execution Stack: MyStack{stack=[(print(VarExp{id='varc'});;(readFile{exp=VarExp{id='varf'}, lineReadVariable=VarExp{id='varc'}};(print(VarExp{id='varc'});;closeRFile{exp=VarExp{id='varf'}}))), readFile{exp=VarExp{id='varf'}, lineReadVariable=VarExp{id='varc'}}]}
+Symbol table: MyDictionary{Dictionary={varf=StringValue{value=test.in}, varc=IntValue{value=0}}}
+Out: MyList{list=[]}
+Heap table: MyDictionary{Dictionary={StringValue{value=test.in}=java.io.BufferedReader@69663380}}
+-------------------
+Execution Stack: MyStack{stack=[(print(VarExp{id='varc'});;(readFile{exp=VarExp{id='varf'}, lineReadVariable=VarExp{id='varc'}};(print(VarExp{id='varc'});;closeRFile{exp=VarExp{id='varf'}})))]}
+Symbol table: MyDictionary{Dictionary={varf=StringValue{value=test.in}, varc=IntValue{value=4}}}
+Out: MyList{list=[]}
+Heap table: MyDictionary{Dictionary={StringValue{value=test.in}=java.io.BufferedReader@69663380}}
+-------------------
+Execution Stack: MyStack{stack=[(readFile{exp=VarExp{id='varf'}, lineReadVariable=VarExp{id='varc'}};(print(VarExp{id='varc'});;closeRFile{exp=VarExp{id='varf'}})), print(VarExp{id='varc'});]}
+Symbol table: MyDictionary{Dictionary={varf=StringValue{value=test.in}, varc=IntValue{value=4}}}
+Out: MyList{list=[]}
+Heap table: MyDictionary{Dictionary={StringValue{value=test.in}=java.io.BufferedReader@69663380}}
+-------------------
+Execution Stack: MyStack{stack=[(readFile{exp=VarExp{id='varf'}, lineReadVariable=VarExp{id='varc'}};(print(VarExp{id='varc'});;closeRFile{exp=VarExp{id='varf'}}))]}
+Symbol table: MyDictionary{Dictionary={varf=StringValue{value=test.in}, varc=IntValue{value=4}}}
+Out: MyList{list=[IntValue{value=4}]}
+Heap table: MyDictionary{Dictionary={StringValue{value=test.in}=java.io.BufferedReader@69663380}}
+-------------------
+Execution Stack: MyStack{stack=[(print(VarExp{id='varc'});;closeRFile{exp=VarExp{id='varf'}}), readFile{exp=VarExp{id='varf'}, lineReadVariable=VarExp{id='varc'}}]}
+Symbol table: MyDictionary{Dictionary={varf=StringValue{value=test.in}, varc=IntValue{value=4}}}
+Out: MyList{list=[IntValue{value=4}]}
+Heap table: MyDictionary{Dictionary={StringValue{value=test.in}=java.io.BufferedReader@69663380}}
+-------------------
+Execution Stack: MyStack{stack=[(print(VarExp{id='varc'});;closeRFile{exp=VarExp{id='varf'}})]}
+Symbol table: MyDictionary{Dictionary={varf=StringValue{value=test.in}, varc=IntValue{value=5}}}
+Out: MyList{list=[IntValue{value=4}]}
+Heap table: MyDictionary{Dictionary={StringValue{value=test.in}=java.io.BufferedReader@69663380}}
+-------------------
+Execution Stack: MyStack{stack=[closeRFile{exp=VarExp{id='varf'}}, print(VarExp{id='varc'});]}
+Symbol table: MyDictionary{Dictionary={varf=StringValue{value=test.in}, varc=IntValue{value=5}}}
+Out: MyList{list=[IntValue{value=4}]}
+Heap table: MyDictionary{Dictionary={StringValue{value=test.in}=java.io.BufferedReader@69663380}}
+-------------------
+Execution Stack: MyStack{stack=[closeRFile{exp=VarExp{id='varf'}}]}
+Symbol table: MyDictionary{Dictionary={varf=StringValue{value=test.in}, varc=IntValue{value=5}}}
+Out: MyList{list=[IntValue{value=4}, IntValue{value=5}]}
+Heap table: MyDictionary{Dictionary={StringValue{value=test.in}=java.io.BufferedReader@69663380}}
+-------------------
+Execution Stack: MyStack{stack=[]}
+Symbol table: MyDictionary{Dictionary={varf=StringValue{value=test.in}, varc=IntValue{value=5}}}
+Out: MyList{list=[IntValue{value=4}, IntValue{value=5}]}
+Heap table: MyDictionary{Dictionary={StringValue{value=test.in}=java.io.BufferedReader@69663380}}
+-------------------
+Execution Stack: MyStack{stack=[(VarDeclStmt{value='varf', type=string};(varf=ValueExp{e=StringValue{value=test.in}};(openRFile{exp=VarExp{id='varf'}};(VarDeclStmt{value='varc', type=int};(readFile{exp=VarExp{id='varf'}, lineReadVariable=VarExp{id='varc'}};(print(VarExp{id='varc'});;(readFile{exp=VarExp{id='varf'}, lineReadVariable=VarExp{id='varc'}};(print(VarExp{id='varc'});;closeRFile{exp=VarExp{id='varf'}}))))))))]}
+Symbol table: MyDictionary{Dictionary={}}
+Out: MyList{list=[]}
+Heap table: MyDictionary{Dictionary={}}
+-------------------
+Execution Stack: MyStack{stack=[(varf=ValueExp{e=StringValue{value=test.in}};(openRFile{exp=VarExp{id='varf'}};(VarDeclStmt{value='varc', type=int};(readFile{exp=VarExp{id='varf'}, lineReadVariable=VarExp{id='varc'}};(print(VarExp{id='varc'});;(readFile{exp=VarExp{id='varf'}, lineReadVariable=VarExp{id='varc'}};(print(VarExp{id='varc'});;closeRFile{exp=VarExp{id='varf'}}))))))), VarDeclStmt{value='varf', type=string}]}
+Symbol table: MyDictionary{Dictionary={}}
+Out: MyList{list=[]}
+Heap table: MyDictionary{Dictionary={}}
+-------------------
+Execution Stack: MyStack{stack=[(varf=ValueExp{e=StringValue{value=test.in}};(openRFile{exp=VarExp{id='varf'}};(VarDeclStmt{value='varc', type=int};(readFile{exp=VarExp{id='varf'}, lineReadVariable=VarExp{id='varc'}};(print(VarExp{id='varc'});;(readFile{exp=VarExp{id='varf'}, lineReadVariable=VarExp{id='varc'}};(print(VarExp{id='varc'});;closeRFile{exp=VarExp{id='varf'}})))))))]}
+Symbol table: MyDictionary{Dictionary={varf=StringValue{value=}}}
+Out: MyList{list=[]}
+Heap table: MyDictionary{Dictionary={}}
+-------------------
+Execution Stack: MyStack{stack=[(openRFile{exp=VarExp{id='varf'}};(VarDeclStmt{value='varc', type=int};(readFile{exp=VarExp{id='varf'}, lineReadVariable=VarExp{id='varc'}};(print(VarExp{id='varc'});;(readFile{exp=VarExp{id='varf'}, lineReadVariable=VarExp{id='varc'}};(print(VarExp{id='varc'});;closeRFile{exp=VarExp{id='varf'}})))))), varf=ValueExp{e=StringValue{value=test.in}}]}
+Symbol table: MyDictionary{Dictionary={varf=StringValue{value=}}}
+Out: MyList{list=[]}
+Heap table: MyDictionary{Dictionary={}}
+-------------------
+Execution Stack: MyStack{stack=[(openRFile{exp=VarExp{id='varf'}};(VarDeclStmt{value='varc', type=int};(readFile{exp=VarExp{id='varf'}, lineReadVariable=VarExp{id='varc'}};(print(VarExp{id='varc'});;(readFile{exp=VarExp{id='varf'}, lineReadVariable=VarExp{id='varc'}};(print(VarExp{id='varc'});;closeRFile{exp=VarExp{id='varf'}}))))))]}
+Symbol table: MyDictionary{Dictionary={varf=StringValue{value=test.in}}}
+Out: MyList{list=[]}
+Heap table: MyDictionary{Dictionary={}}
+-------------------
+Execution Stack: MyStack{stack=[(VarDeclStmt{value='varc', type=int};(readFile{exp=VarExp{id='varf'}, lineReadVariable=VarExp{id='varc'}};(print(VarExp{id='varc'});;(readFile{exp=VarExp{id='varf'}, lineReadVariable=VarExp{id='varc'}};(print(VarExp{id='varc'});;closeRFile{exp=VarExp{id='varf'}}))))), openRFile{exp=VarExp{id='varf'}}]}
+Symbol table: MyDictionary{Dictionary={varf=StringValue{value=test.in}}}
+Out: MyList{list=[]}
+Heap table: MyDictionary{Dictionary={}}
+-------------------
+Execution Stack: MyStack{stack=[(VarDeclStmt{value='varc', type=int};(readFile{exp=VarExp{id='varf'}, lineReadVariable=VarExp{id='varc'}};(print(VarExp{id='varc'});;(readFile{exp=VarExp{id='varf'}, lineReadVariable=VarExp{id='varc'}};(print(VarExp{id='varc'});;closeRFile{exp=VarExp{id='varf'}})))))]}
+Symbol table: MyDictionary{Dictionary={varf=StringValue{value=test.in}}}
+Out: MyList{list=[]}
+Heap table: MyDictionary{Dictionary={StringValue{value=test.in}=java.io.BufferedReader@69663380}}
+-------------------
+Execution Stack: MyStack{stack=[(readFile{exp=VarExp{id='varf'}, lineReadVariable=VarExp{id='varc'}};(print(VarExp{id='varc'});;(readFile{exp=VarExp{id='varf'}, lineReadVariable=VarExp{id='varc'}};(print(VarExp{id='varc'});;closeRFile{exp=VarExp{id='varf'}})))), VarDeclStmt{value='varc', type=int}]}
+Symbol table: MyDictionary{Dictionary={varf=StringValue{value=test.in}}}
+Out: MyList{list=[]}
+Heap table: MyDictionary{Dictionary={StringValue{value=test.in}=java.io.BufferedReader@69663380}}
+-------------------
+Execution Stack: MyStack{stack=[(readFile{exp=VarExp{id='varf'}, lineReadVariable=VarExp{id='varc'}};(print(VarExp{id='varc'});;(readFile{exp=VarExp{id='varf'}, lineReadVariable=VarExp{id='varc'}};(print(VarExp{id='varc'});;closeRFile{exp=VarExp{id='varf'}}))))]}
+Symbol table: MyDictionary{Dictionary={varf=StringValue{value=test.in}, varc=IntValue{value=0}}}
+Out: MyList{list=[]}
+Heap table: MyDictionary{Dictionary={StringValue{value=test.in}=java.io.BufferedReader@69663380}}
+-------------------
+Execution Stack: MyStack{stack=[(print(VarExp{id='varc'});;(readFile{exp=VarExp{id='varf'}, lineReadVariable=VarExp{id='varc'}};(print(VarExp{id='varc'});;closeRFile{exp=VarExp{id='varf'}}))), readFile{exp=VarExp{id='varf'}, lineReadVariable=VarExp{id='varc'}}]}
+Symbol table: MyDictionary{Dictionary={varf=StringValue{value=test.in}, varc=IntValue{value=0}}}
+Out: MyList{list=[]}
+Heap table: MyDictionary{Dictionary={StringValue{value=test.in}=java.io.BufferedReader@69663380}}
+-------------------
+Execution Stack: MyStack{stack=[(print(VarExp{id='varc'});;(readFile{exp=VarExp{id='varf'}, lineReadVariable=VarExp{id='varc'}};(print(VarExp{id='varc'});;closeRFile{exp=VarExp{id='varf'}})))]}
+Symbol table: MyDictionary{Dictionary={varf=StringValue{value=test.in}, varc=IntValue{value=4}}}
+Out: MyList{list=[]}
+Heap table: MyDictionary{Dictionary={StringValue{value=test.in}=java.io.BufferedReader@69663380}}
+-------------------
+Execution Stack: MyStack{stack=[(readFile{exp=VarExp{id='varf'}, lineReadVariable=VarExp{id='varc'}};(print(VarExp{id='varc'});;closeRFile{exp=VarExp{id='varf'}})), print(VarExp{id='varc'});]}
+Symbol table: MyDictionary{Dictionary={varf=StringValue{value=test.in}, varc=IntValue{value=4}}}
+Out: MyList{list=[]}
+Heap table: MyDictionary{Dictionary={StringValue{value=test.in}=java.io.BufferedReader@69663380}}
+-------------------
+Execution Stack: MyStack{stack=[(readFile{exp=VarExp{id='varf'}, lineReadVariable=VarExp{id='varc'}};(print(VarExp{id='varc'});;closeRFile{exp=VarExp{id='varf'}}))]}
+Symbol table: MyDictionary{Dictionary={varf=StringValue{value=test.in}, varc=IntValue{value=4}}}
+Out: MyList{list=[IntValue{value=4}]}
+Heap table: MyDictionary{Dictionary={StringValue{value=test.in}=java.io.BufferedReader@69663380}}
+-------------------
+Execution Stack: MyStack{stack=[(print(VarExp{id='varc'});;closeRFile{exp=VarExp{id='varf'}}), readFile{exp=VarExp{id='varf'}, lineReadVariable=VarExp{id='varc'}}]}
+Symbol table: MyDictionary{Dictionary={varf=StringValue{value=test.in}, varc=IntValue{value=4}}}
+Out: MyList{list=[IntValue{value=4}]}
+Heap table: MyDictionary{Dictionary={StringValue{value=test.in}=java.io.BufferedReader@69663380}}
+-------------------
+Execution Stack: MyStack{stack=[(print(VarExp{id='varc'});;closeRFile{exp=VarExp{id='varf'}})]}
+Symbol table: MyDictionary{Dictionary={varf=StringValue{value=test.in}, varc=IntValue{value=5}}}
+Out: MyList{list=[IntValue{value=4}]}
+Heap table: MyDictionary{Dictionary={StringValue{value=test.in}=java.io.BufferedReader@69663380}}
+-------------------
+Execution Stack: MyStack{stack=[closeRFile{exp=VarExp{id='varf'}}, print(VarExp{id='varc'});]}
+Symbol table: MyDictionary{Dictionary={varf=StringValue{value=test.in}, varc=IntValue{value=5}}}
+Out: MyList{list=[IntValue{value=4}]}
+Heap table: MyDictionary{Dictionary={StringValue{value=test.in}=java.io.BufferedReader@69663380}}
+-------------------
+Execution Stack: MyStack{stack=[closeRFile{exp=VarExp{id='varf'}}]}
+Symbol table: MyDictionary{Dictionary={varf=StringValue{value=test.in}, varc=IntValue{value=5}}}
+Out: MyList{list=[IntValue{value=4}, IntValue{value=5}]}
+Heap table: MyDictionary{Dictionary={StringValue{value=test.in}=java.io.BufferedReader@69663380}}
+-------------------
+Execution Stack: MyStack{stack=[]}
+Symbol table: MyDictionary{Dictionary={varf=StringValue{value=test.in}, varc=IntValue{value=5}}}
+Out: MyList{list=[IntValue{value=4}, IntValue{value=5}]}
+Heap table: MyDictionary{Dictionary={}}
+-------------------

@@ -44,4 +44,11 @@ public class openRFile implements IStmt {
         else throw new MyException("openRF didn t reciev a filePath as expression");
         return state;
     }
+
+    @Override
+    public String toString() {
+        return "openRFile{" +
+                "exp=" + exp.toString() +
+                '}';
+    }
 }
