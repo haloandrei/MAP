@@ -1,22 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7a7ec08c-09f3-498c-bf84-32b78ffc5ce7" name="Default Changelist" comment="" />
+    <list default="true" id="7a7ec08c-09f3-498c-bf84-32b78ffc5ce7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/company/Interpreter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/model/ExitCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/model/Statements/closeRFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/model/Statements/openRFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/model/Statements/readFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/model/Types/StringType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/model/Values/StringValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/model/view/Command.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/model/view/ExitCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/IRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Repository/IRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Repository/Repository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Ui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Ui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/model/Expression/LogicExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Expression/LogicExp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/model/Expression/ValueExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Expression/ValueExp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/model/Expression/VarExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Expression/VarExp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/model/PrgState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/PrgState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/model/Statements/PrintStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Statements/PrintStmt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/model/Types/BoolType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Types/BoolType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/model/Types/IntType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Types/IntType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/model/Types/Type.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Types/Type.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/model/Values/BoolValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Values/BoolValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/model/Values/IntValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Values/IntValue.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="MAPA2" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
@@ -25,7 +59,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="C:/Program Files/Git/git-bash.exe" />
+    <property name="last_opened_file_path" value="C:/Program Files/Git/cmd/git.exe" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -90,7 +124,11 @@
       <workItem from="1573717126180" duration="10118000" />
       <workItem from="1573911813996" duration="2979000" />
       <workItem from="1573996616728" duration="80000" />
-      <workItem from="1574098565866" duration="3202000" />
+      <workItem from="1574098565866" duration="4043000" />
+      <workItem from="1574191724660" duration="1627000" />
+      <workItem from="1574257279031" duration="12703000" />
+      <workItem from="1574318623713" duration="567000" />
+      <workItem from="1574326342884" duration="313000" />
     </task>
     <servers />
   </component>
@@ -102,21 +140,12 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/company/model/Statements/IfStmt.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

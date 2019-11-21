@@ -8,9 +8,15 @@ import com.company.model.Values.BoolValue;
 import com.company.model.Values.Value;
 
 public class LogicExp implements Exp {
-    Exp e1;
-    Exp e2;
-    int op;
+    private Exp e1;
+    private Exp e2;
+    private String op;
+    public LogicExp(Exp inputExpression1, Exp inputExpression2, String operator)
+    {
+        e1 = inputExpression1;
+        e2 = inputExpression2;
+        op = operator;
+    }
     @Override
     public Value eval(MyIDictionary<String,Value> tbl) throws MyException {
         Value v1, v2;
@@ -23,8 +29,8 @@ public class LogicExp implements Exp {
                 boolean n1, n2;
                 n1 = i1.getVal();
                 n2 = i2.getVal();
-                if (op == '&') return new BoolValue(n1 && n2);
-                else if (op == '|') return new BoolValue(n1 | n2);
+                if (op.equals('&')) return new BoolValue(n1 && n2);
+                else if (op.equals('|')) return new BoolValue(n1 | n2);
                 else  throw new MyException("invalid operant");
 
             } else

@@ -1,10 +1,8 @@
 package com.company;
 
-import com.company.Repository;
 import com.company.model.Expression.ArithExp;
 import com.company.model.Expression.ValueExp;
 import com.company.model.Expression.VarExp;
-import com.company.model.PrgState;
 import com.company.model.Statements.*;
 import com.company.model.Types.BoolType;
 import com.company.model.Types.IntType;

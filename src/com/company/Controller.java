@@ -3,10 +3,13 @@ package com.company;
 import com.company.model.AbstractDataTypes.MyException;
 import com.company.model.AbstractDataTypes.MyIStack;
 import com.company.model.PrgState;
+import com.company.model.Repository.Repository;
 import com.company.model.Statements.IStmt;
 
+import java.io.IOException;
+
 public class Controller {
-    Repository repo;
+    private Repository repo;
 
     public Controller(Repository newRepo){
         repo = newRepo;
@@ -19,18 +22,20 @@ public class Controller {
         IStmt crtStmt = stk.pop();
         return crtStmt.execute(state);
     }
-    void allStep(boolean debug){
+    void allStep(boolean debug) throws IOException {
         PrgState prg = repo.getCrtPrgState(); // repo is the controller field of type MyRepoInterface
         if (debug == true)
             System.out.println(prg.toString());//here you can display the prg state
+            repo.logPrgStateExec();
         while (!prg.getStk().isEmpty()) {
             oneStep();
             if (debug == true)
+                repo.logPrgStateExec();
                 System.out.println(prg.toString());
         }
     }
 
-    public Repository getRepo() {
+        public Repository getRepo() {
 
 
         return repo;

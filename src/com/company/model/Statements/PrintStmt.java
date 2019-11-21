@@ -8,7 +8,7 @@ import com.company.model.Expression.VarExp;
 import com.company.model.Values.Value;
 
 public class PrintStmt implements IStmt {
-    Exp exp;
+    private Exp exp;
 
     public PrintStmt(VarExp v) {
         this.exp = v;

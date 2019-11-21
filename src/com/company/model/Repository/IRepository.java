@@ -1,4 +1,4 @@
-package com.company;
+package com.company.model.Repository;
 
 import com.company.model.AbstractDataTypes.MyException;
 

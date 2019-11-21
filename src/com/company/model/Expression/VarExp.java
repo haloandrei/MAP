@@ -18,6 +18,10 @@ public class VarExp implements Exp {
             return tbl.lookup(id);
         }
 
+    public String getId() {
+        return id;
+    }
+
     @Override
     public String toString() {
         return "VarExp{" +
