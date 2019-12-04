@@ -2,33 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a7ec08c-09f3-498c-bf84-32b78ffc5ce7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/company/Interpreter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/model/ExitCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/model/Statements/closeRFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/model/Statements/openRFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/model/Statements/readFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/model/Types/StringType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/model/Values/StringValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/model/view/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/model/view/ExitCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/model/AbstractDataTypes/MyHeap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/model/AbstractDataTypes/MyIHeap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/model/Types/RefType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/model/Values/RefValue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/IRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Repository/IRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Repository/Repository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Ui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Ui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/model/Expression/LogicExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Expression/LogicExp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/model/Expression/ValueExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Expression/ValueExp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/model/Expression/VarExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Expression/VarExp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log4.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/model/PrgState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/PrgState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/model/Statements/PrintStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Statements/PrintStmt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/model/Types/BoolType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Types/BoolType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/model/Types/IntType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Types/IntType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/model/Types/Type.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Types/Type.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/model/Values/BoolValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Values/BoolValue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/model/Values/IntValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Values/IntValue.java" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,6 +37,11 @@
   </component>
   <component name="ProjectId" id="1Se1VlGUoxDoeb0KW5TntxMFqXA" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -78,19 +64,20 @@
       <recent name="com.company.model" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Interpreter">
+    <configuration name="Interpreter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.model.view.Interpreter" />
+      <module name="MAPA2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.model.view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
       <module name="MAPA2" />
@@ -103,9 +90,22 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Interpreter" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -128,8 +128,19 @@
       <workItem from="1574191724660" duration="1627000" />
       <workItem from="1574257279031" duration="12703000" />
       <workItem from="1574318623713" duration="567000" />
-      <workItem from="1574326342884" duration="313000" />
+      <workItem from="1574326342884" duration="8086000" />
+      <workItem from="1574335208299" duration="453000" />
+      <workItem from="1574336835217" duration="83000" />
+      <workItem from="1575487391177" duration="6563000" />
     </task>
+    <task id="LOCAL-00001" summary="no msg">
+      <created>1574326683165</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1574326683165</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,5 +158,19 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="no msg" />
+    <option name="LAST_COMMIT_MESSAGE" value="no msg" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="574" y="141" key="#com.intellij.ide.util.MemberChooser" timestamp="1575493150020">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="574" y="141" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1575493150020" />
+    <state x="465" y="255" key="com.intellij.ide.util.TipDialog" timestamp="1575487395864">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="465" y="255" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1575487395864" />
   </component>
 </project>

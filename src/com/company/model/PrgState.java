@@ -9,12 +9,14 @@ import com.company.model.Values.Value;
 
 import java.io.BufferedReader;
 import java.io.File;
+import java.util.HashMap;
 
 public class PrgState {
     private MyIStack<IStmt> exeStack;
     private MyIDictionary<String, Value> symTable;
     private MyIList<Value> out;
     private MyIDictionary<StringValue, BufferedReader> FileTable;
+    private MyIHeap<Integer, Value> Heap;
 
     IStmt originalProgram; //optional field, but good to have
     public PrgState(MyIStack<IStmt> stk, MyIDictionary<String,Value> symtbl, MyIList<Value> ot, MyIDictionary<StringValue,BufferedReader> ift){
@@ -29,6 +31,7 @@ public class PrgState {
         symTable = new MyDictionary<>();
         out = new MyList<>();
         FileTable = new MyDictionary<>();
+        Heap = new MyHeap<>();
         exeStack.push(stmt);
     }
 
