@@ -1,36 +1,39 @@
 package com.company.model.Values;
 
 import com.company.model.AbstractDataTypes.MyException;
+import com.company.model.Types.IntType;
+import com.company.model.Types.StringType;
 import com.company.model.Types.Type;
-import com.company.model.Types.BoolType;
 
-public class BoolValue implements Value {
-    boolean value;
-    public BoolValue(boolean newValue){
+public class StringValue implements Value {
+    private String value;
+    public StringValue(String newValue){
         value = newValue;
     }
 
     public boolean equals(Object another){
-        if (another instanceof BoolValue)
-            if (((BoolValue) another).getVal() == value)
+        if (another instanceof StringValue)
+            if(((StringValue) another).getVal()==value)
                 return true;
             else
                 return false;
-        else throw new MyException("not same type equal ==");
+        else throw new MyException("no same type ==");
     }
+
+
     @Override
     public Type getType() {
-        BoolType e = new BoolType();
+        StringType e = new StringType();
         return e;
     }
 
-    public boolean getVal() {
+    public String getVal() {
         return value;
     }
 
     @Override
     public String toString() {
-        return "BoolValue{" +
+        return "StringValue{" +
                 "value=" + value +
                 '}';
     }

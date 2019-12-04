@@ -5,7 +5,7 @@ import com.company.model.AbstractDataTypes.MyIDictionary;
 import com.company.model.Values.Value;
 
 public class ValueExp implements Exp {
-    Value e;
+    private Value e;
 
     public ValueExp(Value newValue) {
         e = newValue;
