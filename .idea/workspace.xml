@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a7ec08c-09f3-498c-bf84-32b78ffc5ce7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/company/model/AbstractDataTypes/MyHeap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/model/AbstractDataTypes/MyIHeap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/model/Types/RefType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/model/Values/RefValue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log4.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/model/PrgState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/PrgState.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +125,7 @@
       <workItem from="1574326342884" duration="8086000" />
       <workItem from="1574335208299" duration="453000" />
       <workItem from="1574336835217" duration="83000" />
-      <workItem from="1575487391177" duration="6563000" />
+      <workItem from="1575487391177" duration="7212000" />
     </task>
     <task id="LOCAL-00001" summary="no msg">
       <created>1574326683165</created>
@@ -140,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574326683165</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="A4">
+      <created>1575493981425</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1575493981425</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,13 +162,22 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="no msg" />
-    <option name="LAST_COMMIT_MESSAGE" value="no msg" />
+    <MESSAGE value="A4" />
+    <option name="LAST_COMMIT_MESSAGE" value="A4" />
   </component>
   <component name="WindowStateProjectService">
     <state x="574" y="141" key="#com.intellij.ide.util.MemberChooser" timestamp="1575493150020">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="574" y="141" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1575493150020" />
+    <state x="393" y="26" key="CommitChangelistDialog2" timestamp="1575493980859">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="393" y="26" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1575493980859" />
+    <state x="651" y="325" width="258" height="214" key="Github.ShareDialog" timestamp="1575494596899">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="651" y="325" width="258" height="214" key="Github.ShareDialog/0.0.1536.864@0.0.1536.864" timestamp="1575494596899" />
     <state x="465" y="255" key="com.intellij.ide.util.TipDialog" timestamp="1575487395864">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
