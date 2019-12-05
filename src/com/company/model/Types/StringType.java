@@ -16,4 +16,10 @@ public class StringType implements Type {
     public Value defaultValue() {
         return new StringValue("");
     }
+
+    @Override
+    public Type deepcopy() {
+        return new StringType();
+    }
+
 }

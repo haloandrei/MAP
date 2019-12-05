@@ -14,6 +14,12 @@ public class IntValue implements Value {
     public Type getType() {
         return new IntType();
     }
+
+    @Override
+    public Value deepcopy() {
+        return new IntValue(value);
+    }
+
     public boolean equals(Object another){
         if (another instanceof IntValue)
             if(((IntValue) another).getVal()==value)

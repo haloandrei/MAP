@@ -4,4 +4,6 @@ import com.company.model.Values.Value;
 
 public interface Type {
     Value defaultValue();
+
+    Type deepcopy();
 }

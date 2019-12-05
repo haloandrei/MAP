@@ -2,6 +2,7 @@ package com.company.model.Expression;
 
 import com.company.model.AbstractDataTypes.MyException;
 import com.company.model.AbstractDataTypes.MyIDictionary;
+import com.company.model.AbstractDataTypes.MyIHeap;
 import com.company.model.Types.BoolType;
 import com.company.model.Types.IntType;
 import com.company.model.Values.BoolValue;
@@ -13,6 +14,11 @@ public class RelationalExp implements Exp {
     private Exp expression2;
     private String relation;
 
+    RelationalExp(Exp e1,Exp e2, String rel){
+        expression1=e1;
+        expression2=e2;
+        relation = rel;
+    }
     @Override
     public Value eval(MyIDictionary<String, Value> tbl) throws MyException {
         Value v1, v2;
@@ -38,5 +44,16 @@ public class RelationalExp implements Exp {
                 throw new MyException("second operand is not an int");
         } else
             throw new MyException("first operand is not an int");
+    }
+
+    @Override
+    public Value eval(MyIDictionary<String, Value> tb1, MyIHeap<Integer, Value> tb2) throws MyException {
+        return null;
+        //TBA
+    }
+
+    @Override
+    public Exp deepcopy() {
+        return new RelationalExp(expression1,expression2,relation);
     }
 }

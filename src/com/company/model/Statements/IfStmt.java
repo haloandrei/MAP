@@ -28,5 +28,10 @@ public class IfStmt implements IStmt {
         }
         return state;
         }
+
+    @Override
+    public IStmt deepcopy() {
+        return new IfStmt(exp, thenS, elseS);
+    }
 }
 

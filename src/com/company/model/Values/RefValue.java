@@ -10,7 +10,36 @@ public class RefValue implements Value{
         address = addressIn;
         locationType = locationTypeIn;
     }
-    public int getAddr() {return address;}
-    public Type getType() { return new RefType(locationType);}
+
+    public int getAddress() {
+        return address;
+    }
+
+    public Type getLocationType() {
+        return locationType;
+    }
+
+    public void setAddress(int address) {
+        this.address = address;
+    }
+
+    public void setLocationType(Type locationType) {
+        this.locationType = locationType;
+    }
+
+    @Override
+    public Type getType() {
+        return new RefType(locationType);
+    }
+    @Override
+    public Value deepcopy() {
+        return new RefValue(address, locationType.deepcopy());
+    }
+
+    @Override
+    public String toString(){
+        return "( " + Integer.toString(this.address) + ", " + locationType.toString() + " )";
+    }
+
 }
 

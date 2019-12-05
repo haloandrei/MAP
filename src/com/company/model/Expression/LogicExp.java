@@ -3,6 +3,7 @@ package com.company.model.Expression;
 import com.company.model.AbstractDataTypes.MyException;
 import com.company.model.AbstractDataTypes.MyDictionary;
 import com.company.model.AbstractDataTypes.MyIDictionary;
+import com.company.model.AbstractDataTypes.MyIHeap;
 import com.company.model.Types.BoolType;
 import com.company.model.Values.BoolValue;
 import com.company.model.Values.Value;
@@ -37,6 +38,16 @@ public class LogicExp implements Exp {
                 throw new MyException("second operand is not an boolean");
         } else
             throw new MyException("first operand is not an boolean");}
+
+    @Override
+    public Value eval(MyIDictionary<String, Value> tb1, MyIHeap<Integer, Value> tb2) throws MyException {
+        return null;
+    }
+
+    @Override
+    public Exp deepcopy() {
+        return new LogicExp(e1,e2,op);
+    }
 
     @Override
     public String toString() {

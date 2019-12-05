@@ -59,6 +59,11 @@ public class readFile implements IStmt {
     }
 
     @Override
+    public IStmt deepcopy() {
+        return new readFile(exp,lineReadVariable);
+    }
+
+    @Override
     public String toString() {
         return "readFile{" +
                 "exp=" + exp.toString() +

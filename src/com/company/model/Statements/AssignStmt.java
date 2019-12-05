@@ -34,4 +34,9 @@ public class AssignStmt implements IStmt {
         else throw new MyException("the used variable " +id + " was not declared before");
             return state;
     }
+
+    @Override
+    public IStmt deepcopy() {
+        return new AssignStmt(id, exp);
+    }
 }

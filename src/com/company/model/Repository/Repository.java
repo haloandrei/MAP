@@ -46,7 +46,8 @@ public class Repository implements IRepository {
             logFIle.print("Execution Stack: " + Memory.get(0).getStk().toString() + '\n');
             logFIle.print("Symbol table: " + Memory.get(0).getSymTable().toString() + '\n');
             logFIle.print("Out: " + Memory.get(0).getOut().toString() + '\n');
-            logFIle.print("Heap table: " + Memory.get(0).getFileTable() + '\n');
+            logFIle.print("File table: " + Memory.get(0).getFileTable() + '\n');
+            logFIle.print("File table: " + Memory.get(0).getHeap() + '\n');
             logFIle.print("-------------------" + '\n');
         }catch (IOException error){
             throw new  MyException(error.toString());

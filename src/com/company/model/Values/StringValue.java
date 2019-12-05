@@ -27,6 +27,11 @@ public class StringValue implements Value {
         return e;
     }
 
+    @Override
+    public Value deepcopy() {
+        return new StringValue(value);
+    }
+
     public String getVal() {
         return value;
     }
@@ -37,4 +42,5 @@ public class StringValue implements Value {
                 "value=" + value +
                 '}';
     }
+
 }
