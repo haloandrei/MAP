@@ -5,11 +5,14 @@ import com.company.model.Values.Value;
 
 import java.io.BufferedReader;
 import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
 
 
 public class MyDictionary<T, T1> implements MyIDictionary<T, T1>{
 
     private HashMap<T,T1> Dictionary;
+    private HashMap<Object, Object> dictionary;
 
     public MyDictionary() {
         Dictionary = new HashMap<>();
@@ -33,6 +36,10 @@ public class MyDictionary<T, T1> implements MyIDictionary<T, T1>{
         return Dictionary.get(token);
     }
 
+    @Override
+    public List<T1> getContent() {
+        return new LinkedList<>(this.Dictionary.values());
+    }
     public boolean isDefinedBuffer(T id) {
         T1 val =  Dictionary.get(id);
         if (val == null)

@@ -25,17 +25,31 @@ public class Controller {
         IStmt crtStmt = stk.pop();
         return crtStmt.execute(state);
     }
-    public void allStep(boolean debug) throws IOException {
-        PrgState prg = repo.getCrtPrgState(); // repo is the controller field of type MyRepoInterface
-        if (debug)
-            System.out.println(prg.toString());//here you can display the prg state
-            repo.logPrgStateExec();
-        while (!prg.getStk().isEmpty()) {
-            oneStep();
-            if (debug)
-                repo.logPrgStateExec();
-                System.out.println(prg.toString());
+//    public void allStep(boolean debug) throws IOException {
+//        PrgState prg = repo.getCrtPrgState(); // repo is the controller field of type MyRepoInterface
+//        if (debug)
+//            System.out.println(prg.toString());//here you can display the prg state
+//            repo.logPrgStateExec();
+//        while (!prg.getStk().isEmpty()) {
+//            oneStep();
+//            if (debug)
+//                repo.logPrgStateExec();
+//                System.out.println(prg.toString());
+//        }
+//    }
+    public PrgState oldAllStepEvaluation() throws MyException{
+        PrgState program = repo.getCrtPrgState();
+        while(!program.getStk().isEmpty()) {
+            //oneStepEvaluation(program);
+            program.getHeap().setContent(
+                    garbageCollector.safeGarbageCollector(
+                            garbageCollector.addIndirections(garbageCollector.getAddressFromTables(repo.getProgramList()),program.getHeap()),
+                            program.getHeap()));
+
+            System.out.println(repo.getCrtPrgState().toString() + '\n');
         }
+        program.reset();
+        return program;
     }
 
         public Repository getRepo() {

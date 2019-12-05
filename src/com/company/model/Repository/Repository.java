@@ -10,6 +10,7 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.List;
 
 public class Repository implements IRepository {
 
@@ -31,6 +32,9 @@ public class Repository implements IRepository {
         Memory = newMem;
     }
 
+    public List<PrgState> getProgramList(){
+        return Memory.getAll();
+    }
 
 
     public PrgState getCrtPrgState(){

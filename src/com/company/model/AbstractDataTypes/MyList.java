@@ -29,6 +29,10 @@ public class MyList<T> implements MyIList<T> {
         return list.get(index);
     }
 
+    public List<T> getAll() {
+        return list;
+    }
+
     @Override
     public String toString() {
         return "MyList{" +
