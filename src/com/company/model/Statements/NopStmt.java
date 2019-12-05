@@ -8,4 +8,9 @@ public class NopStmt implements IStmt {
     public PrgState execute(PrgState state) {
         return state;
     }
+
+    @Override
+    public IStmt deepcopy() {
+        return null;
+    }
 }

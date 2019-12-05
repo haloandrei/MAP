@@ -21,4 +21,9 @@ public class CompStmt implements IStmt {
         stk.push(first);
         return state;
     }
+
+    @Override
+    public IStmt deepcopy() {
+        return new CompStmt(first,snd);
+    }
 }

@@ -59,5 +59,9 @@ public class PrgState {
     public MyIDictionary<StringValue, BufferedReader> getFileTable() {
         return FileTable;
     }
+
+    public MyIHeap<Integer,Value> getHeap(){
+        return Heap;
+    }
 }
 

@@ -24,6 +24,11 @@ public class BoolValue implements Value {
         return e;
     }
 
+    @Override
+    public Value deepcopy() {
+        return new BoolValue(value);
+    }
+
     public boolean getVal() {
         return value;
     }

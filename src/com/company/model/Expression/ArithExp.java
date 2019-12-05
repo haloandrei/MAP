@@ -3,6 +3,7 @@ package com.company.model.Expression;
 import com.company.model.AbstractDataTypes.MyException;
 import com.company.model.AbstractDataTypes.MyDictionary;
 import com.company.model.AbstractDataTypes.MyIDictionary;
+import com.company.model.AbstractDataTypes.MyIHeap;
 import com.company.model.Types.IntType;
 import com.company.model.Values.IntValue;
 import com.company.model.Values.Value;
@@ -46,5 +47,15 @@ public class ArithExp implements Exp {
         } else
             throw new MyException("first operand is not an integer");
         throw  new MyException("All hope is lost");
+    }
+
+    @Override
+    public Value eval(MyIDictionary<String, Value> tb1, MyIHeap<Integer, Value> tb2) throws MyException {
+        return null;
+    }
+
+    @Override
+    public Exp deepcopy() {
+        return new ArithExp(op,e1,e2);
     }
 }

@@ -21,4 +21,9 @@ public class PrintStmt implements IStmt {
         list.add(exp.eval(dictionary));
         return state;
     }
+
+    @Override
+    public IStmt deepcopy() {
+        return new PrintStmt((VarExp) exp);
+    }
 }
