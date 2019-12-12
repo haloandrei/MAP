@@ -2,6 +2,8 @@ package com.company.model.AbstractDataTypes;
 
 import com.company.model.Values.Value;
 
+import java.util.List;
+
 public interface MyIDictionary<T, T1> {
     public void addElement(T key, T1 value);
 
@@ -14,4 +16,6 @@ public interface MyIDictionary<T, T1> {
     public Value getValue(T id);
 
     public void update(T id, T1 val);
+
+    List<T1> getContent();
 }

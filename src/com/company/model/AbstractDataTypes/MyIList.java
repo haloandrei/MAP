@@ -2,6 +2,8 @@ package com.company.model.AbstractDataTypes;
 
 import com.company.model.Types.Type;
 
+import java.util.List;
+
 public interface MyIList<T> {
     boolean add(T e);
     T remove(int index);
@@ -9,4 +11,5 @@ public interface MyIList<T> {
 
     int size();
     T get(int index);
+    List<T> getAll();
 }

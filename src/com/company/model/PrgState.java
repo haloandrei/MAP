@@ -63,5 +63,14 @@ public class PrgState {
     public MyIHeap<Integer,Value> getHeap(){
         return Heap;
     }
+
+    public void reset() throws MyException {
+        this.exeStack = new MyStack<IStmt>();
+        this.symTable = new MyDictionary<String, Value>();
+        this.out = new MyList<Value>();
+        this.exeStack.push(this.originalProgram.deepcopy());
+        this.FileTable = new MyDictionary<StringValue, BufferedReader>();
+        this.Heap = new MyHeap<Integer, Value>();
+    }
 }
 

@@ -1,40 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7a7ec08c-09f3-498c-bf84-32b78ffc5ce7" name="Default Changelist" comment="A4">
-      <change afterPath="$PROJECT_DIR$/src/com/company/model/Expression/ReadHeapExpression.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/model/Statements/NewStmt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/model/Statements/WhileStmt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/model/Statements/WriteHeapStmt.java" afterDir="false" />
+    <list default="true" id="7a7ec08c-09f3-498c-bf84-32b78ffc5ce7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/company/garbageCollector.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/model/Expression/ArithExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Expression/ArithExp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/model/Expression/Exp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Expression/Exp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/model/Expression/LogicExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Expression/LogicExp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/model/Expression/RelationalExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Expression/RelationalExp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/model/Expression/ValueExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Expression/ValueExp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/model/Expression/VarExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Expression/VarExp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/model/PrgState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/PrgState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/model/AbstractDataTypes/MyDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/AbstractDataTypes/MyDictionary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/model/AbstractDataTypes/MyIDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/AbstractDataTypes/MyIDictionary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/model/AbstractDataTypes/MyIList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/AbstractDataTypes/MyIList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/model/AbstractDataTypes/MyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/AbstractDataTypes/MyList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/model/Repository/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Repository/Repository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/model/Statements/AssignStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Statements/AssignStmt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/model/Statements/CompStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Statements/CompStmt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/model/Statements/IStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Statements/IStmt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/model/Statements/IfStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Statements/IfStmt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/model/Statements/NopStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Statements/NopStmt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/model/Statements/PrintStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Statements/PrintStmt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/model/Statements/VarDeclStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Statements/VarDeclStmt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/model/Statements/closeRFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Statements/closeRFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/model/Statements/openRFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Statements/openRFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/model/Statements/readFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Statements/readFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/model/Types/BoolType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Types/BoolType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/model/Types/IntType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Types/IntType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/model/Types/RefType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Types/RefType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/model/Types/StringType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Types/StringType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/model/Types/Type.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Types/Type.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/model/Values/BoolValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Values/BoolValue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/model/Values/IntValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Values/IntValue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/model/Values/RefValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Values/RefValue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/model/Values/StringValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Values/StringValue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/model/Values/Value.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Values/Value.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +132,7 @@
       <workItem from="1574326342884" duration="8086000" />
       <workItem from="1574335208299" duration="453000" />
       <workItem from="1574336835217" duration="83000" />
-      <workItem from="1575487391177" duration="18256000" />
+      <workItem from="1575487391177" duration="20425000" />
     </task>
     <task id="LOCAL-00001" summary="no msg">
       <created>1574326683165</created>
@@ -180,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575494620214</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="A4">
+      <created>1575507832873</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1575507832873</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,10 +191,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="574" y="141" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1575507795619" />
-    <state x="393" y="26" key="CommitChangelistDialog2" timestamp="1575507765376">
+    <state x="393" y="26" key="CommitChangelistDialog2" timestamp="1575507832282">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="393" y="26" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1575507765376" />
+    <state x="393" y="26" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1575507832282" />
     <state x="651" y="325" width="258" height="214" key="Github.ShareDialog" timestamp="1575494596899">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -225,9 +207,9 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="465" y="255" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1575487395864" />
-    <state x="425" y="197" width="672" height="677" key="run.anything.popup" timestamp="1575500674580">
+    <state x="425" y="197" width="672" height="677" key="run.anything.popup" timestamp="1575510874225">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="425" y="197" width="672" height="677" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1575500674580" />
+    <state x="425" y="197" width="672" height="677" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1575510874225" />
   </component>
 </project>
